@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#_title{font-weight : 900; color:white; font-size:50px;}
+*{text-align: center; position: relative; max-width: 100%; max-height: 100%}
+header{margin: 65px;}
+a{text-decoration-line: none;}
+input{margin: 25px; width: 300px; height: 50px;}
+body{background-color: #ffb84d}
+footer{font-size: 12px;}

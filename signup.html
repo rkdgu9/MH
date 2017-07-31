@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <meta charset="utf-8">
+  <title>SIGNUP</title>
+</head>
+<body>
+    <header>
+      <a href="webserver_main.html" id="_title">SROUD<br>[SIGNUP]</a>
+      <p style="font-size : 10px; color : white;"></p>
+    </header>
+    <form id='signup_form' action="signup.php" method="post">
+        <input type="text" name = "id"  placeholder="아이디" id="id" required><br>
+        <input type="password" name = "pass"  placeholder="비밀번호" id="pass" required maxlength="12"><br>
+        <input type = "password" name="repass" placeholder="비밀번호 확인" id="repass" required maxlength="12"><br>
+        <input type="submit" name="signup" value="회원가입" required>
+    </form>
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("signup_form").onsubmit = function(){
+          var pass = document.getElementById("pass").value ;
+          var repass = document.getElementById("repass").value;
+          var pass_length = document.getElementById("pass").value.length;
+
+            if (pass != "" && pass == repass && pass_length >= 8) {
+              alert("회원가입 되었습니다.");
+            }
+            else if (pass_length<8) {
+              alert("패스워드가 너무 짧습니다. 8자 이상 입력해 주세요");
+              document.getElementById("pass").value="";
+              document.getElementById("repass").value="";
+              return false;
+            }
+            else if (pass != repass) {
+              alert("비밀번호가 일치하지 않습니다.");
+              document.getElementById("pass").value="";
+              document.getElementById("repass").value="";
+              return false;
+            }
+          }
+        }
+    </script>
+    <br>
+    <footer>Team.9.15</footer>
+</body>
+</html>
