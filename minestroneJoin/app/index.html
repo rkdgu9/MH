@@ -8,8 +8,9 @@
 		<meta property="og:description" content="HH MINESTRONE PAGE" />							<!-- 사이트 내용 -->
 		<meta property="og:url" content="https://join-164a8.firebaseapp.com/"/>			<!-- 사이트 URL -->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="http://join-164a8.firebaseapp.com/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="http://join-164a8.firebaseapp.com/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/index.css" />
+		<link rel="shortcut icon" href="https://join-164a8.firebaseapp.com/favicon.png" type="image/x-icon">
+		<link rel="icon" href="https://join-164a8.firebaseapp.com/favicon.png" type="image/x-icon">
 	</head>
 	<body>
 
@@ -19,8 +20,13 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">환영합니다</a></li>
-							<li><a href="#one">'우리' 는 누구인가</a></li>
-							<li><a href="#two">'우리'는 무엇을 하는가</a></li>
+							<li class="subMenuParent"><a href="#one">소개</a>
+								<ul class="subMenu">
+									<li><a href="#one">'우리' 는 누구인가</a></li>
+									<li><a href="#two">'우리'는 무엇을 하는가</a></li>
+								</ul>
+							</li>
+							<li><a href="#four">join</a></li>
 							<li><a href="#three">'우리'와 연락하기 위해</a></li>
 						</ul>
 					</nav>
@@ -45,7 +51,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/chang.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>우리의 정신적 지주! 빅뱅의 리더!</h2>
@@ -57,11 +63,11 @@
 							</div>
 						</section>
 						<section id="oneOne">
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/tactac.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>매우 커여운 탁탁이</h2>
-									<p>부상남자 탁탁!! 탁탁치러 갔나?</p>
+									<p>부상남자 전탁탁!!</p>
 									<ul class="actions">
 										<li><a href="#oneTwo" class="button scrolly">더 알아보기</a></li>
 									</ul>
@@ -69,11 +75,47 @@
 							</div>
 						</section>
 						<section id="oneTwo">
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/minq.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>업소녀 팡규</h2>
-									<p>팡팡! 인성이 터져버렸다! 나주에서 일하고 있는 업소녀 김팡규!!!</p>
+									<h2>팡규</h2>
+									<p>아마도 CS:GO 하고 있을 듯한 팡규</p>
+									<ul class="actions">
+										<li><a href="#oneThree" class="button scrolly">더 알아보기</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section id="oneThree">
+							<a href="#" class="image"><img src="images/hyeonjin.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>미스타 현진</h2>
+									<p>그는 멋진 인생을 살다 자연으로 돌아갔따</p>
+									<ul class="actions">
+										<li><a href="#oneFour" class="button scrolly">더 알아보기</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section id="oneFour">
+							<a href="#" class="image"><img src="images/jun.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>갱스타 리준</h2>
+									<p>그가 무언갈 하고있따. 음흉한 계획이다.<br>옆에 누나가 나오니 다른 사진을 구해야겠따</p>
+									<ul class="actions">
+										<li><a href="#oneFive" class="button scrolly">더 알아보기</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section id="oneFive">
+							<a href="#" class="image"><img src="images/hack.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>현세 에임</h2>
+									<p>그것은 혼모노..</p>
 									<ul class="actions">
 										<li><a href="#two" class="button scrolly">더 알아보기</a></li>
 									</ul>
@@ -104,24 +146,36 @@
 									<p>엉엉ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ</p>
 								</section>
 								<section>
-									<span class="icon major fa-gear"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-code"></span>
+									<h3>일한다</h3>
+									<p>노동조합 우리 한다 일 짠다 코드 열심히</p>
 								</section>
 								<section>
 									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>남은칸 1</h3>
+									<p>남은칸 1</p>
 								</section>
 								<section>
 									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>남은칸 2</h3>
+									<p>남은칸 2</p>
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="#three" class="button scrolly">더 알아보기</a></li>
+								<li><a href="#four" class="button scrolly">더 알아보기</a></li>
 							</ul>
+						</div>
+					</section>
+
+					<section id="four" class="wrapper style2 fade-up">
+						<div class="inner">
+								<div>
+									<h1>JOIN</h1>
+									<a class="button" href="join/start.html">JOIN</a> <!-- 주소 : start.html-->
+									<ul class="actions" style="padding-top:50px;">
+										<li><a href="#three" class="button scrolly">더 알아보기</a></li>
+									</ul>
+								</div>
 						</div>
 					</section>
 
@@ -170,10 +224,10 @@
 											<h3>Social</h3>
 											<ul class="icons">
 												<li><a href="#" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.facebook.com/groups/303454973432372/?ref=bookmarks" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="https://www.facebook.com/%EB%AF%B8%EB%84%A4%EC%8A%A4%ED%8A%B8%EB%A1%9C%EB%84%A4-1895725750651370/" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
 												<li><a href="#" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<!-- <li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li> -->
-												<!-- <li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
